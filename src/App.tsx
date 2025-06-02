@@ -16,6 +16,7 @@ import React19FeaturesSection from "./components/examples/React19FeaturesSection
 import ReactHookFormSection from "./components/examples/ReactHookFormSection";
 import ReactQuerySection from "./components/examples/ReactQuerySection";
 import TypeScriptBestPracticesSection from "./components/examples/TypeScriptBestPracticesSection";
+import Chatbot from "./components/examples/Chatbot";
 import { ThemeProvider } from "./context/ThemeContext";
 import { ViewModeProvider, useViewMode } from "./context/ViewModeContext";
 
@@ -138,11 +139,15 @@ const AppContent: React.FC = () => {
 
 const App: React.FC = () => {
   return (
-    <ThemeProvider>
-      <ViewModeProvider initialSection="modern-react">
-        <AppContent />
-      </ViewModeProvider>
-    </ThemeProvider>
+    <div>
+      <h1>React Best Practices</h1>
+      <Chatbot />
+      <ThemeProvider>
+        <ViewModeProvider initialSection="modern-react">
+          <AppContent />
+        </ViewModeProvider>
+      </ThemeProvider>
+    </div>
   );
 };
 
