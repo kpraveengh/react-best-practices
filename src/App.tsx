@@ -137,7 +137,7 @@ const AppContent: React.FC = () => {
   );
 };
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <div>
       <h1>React Best Practices</h1>
